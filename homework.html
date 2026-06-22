@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::selection{
+            background-color: blue;
+        }
+        .kura{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(233, 249, 8);
+            transition: 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: infinitekura 3s infinite;
+        }
+        .kura:hover{
+            transform: rotate(.99);
+            transition: 2s;
+            background-color: blue;
+            transform: rotate(190deg);
+            
+        }
+        button{ 
+            width: 150px;
+            height: 50px;
+            margin-top: 50px;
+            background-color: coral;
+        }
+        button:active{
+            transform: scale(.9);
+        }
+        h1::first-letter{
+            font-size: 40px;
+            color: brown;
+        }
+        input::placeholder{
+            font-size: initial;
+            color: rgb(21, 230, 42);
+        }
+        
+    </style>
+</head>
+<body><!--first letter-->
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, quasi?</h1>
+    <!--selection-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate pariatur harum ut quaerat minus laboriosam? Esse quos quas veniam excepturi.</p>
+    <!---hover-->
+    <div class="kura">
+        2027
+    </div>
+    <!--active-->
+     <button>concel</button><br>
+    <!-- placeholher -->
+     <input style="margin-top: 10px;" type="id" placeholder="Enter you number">
+    <marquee behavior="scroll" direction="left">Lorem ipsum dolor sit amet consectetur adipisicing.</marquee>
+    <!-- ckeckex -->
+     <input type="checkbox" id="check">
+     <label for="check">male</label>
+   
+</body>
+</html>
